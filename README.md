@@ -1,2 +1,3 @@
-# csci3308
-Repository for CSCI 3308 class
+#David Walling
+
+CSCI3308 -Software Dev Methods and Tools
