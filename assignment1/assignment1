@@ -1,0 +1,7 @@
+file=$1
+while read -r id firstname lastname S1 S2 S3 
+do
+	SUM=$(expr $S1 + $S2 + $S3)
+    AVG=$(expr $SUM / 3)
+    printf '%d [%d] %s, %s\n' "$AVG" "$id" "$lastname" "$firstname"
+done < "$file" | sort -k 3,3d -k 4,4d -k 2,2g
